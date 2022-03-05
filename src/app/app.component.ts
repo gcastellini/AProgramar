@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'approyecto';
+  agregarEnlace(title:HTMLInputElement,link:HTMLInputElement){
+    console.log("values:",title.value,link.value);
+    return false; // cancela el evento de resfrescar la pagina
+}
 }
